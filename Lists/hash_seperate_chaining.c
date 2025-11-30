@@ -154,7 +154,7 @@ int ht_delete(HashTable *ht, int key) {
 }
 
 void ht_print(HashTable *ht) {
-    printf("HashTable m=%ld n=%ld\n", ht->m, ht->n);
+    printf("HashTable m=%zu n=%zu\n", ht->m, ht->n);
     for (size_t i = 0; i < ht->m; ++i) {
         printf("[%2zu]:", i);
         Node *cur = ht->buckets[i];
